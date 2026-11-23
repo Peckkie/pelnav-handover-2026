@@ -1,0 +1,12 @@
+#!/bin/sh
+# เหมือนฟังก์ชัน m ในคู่มือ (หน้า 2) แต่ใช้บน Linux ผ่าน docker
+# วางไฟล์นี้ไว้ที่ <ROOT>/m แล้วใช้  <ROOT>/m list , <ROOT>/m add-user ... ฯลฯ
+R=$(cd "$(dirname "$0")" && pwd)
+IMG=${PELNAV_IMAGE:-pelnav-py312:47d598b}
+if [ -n "$(docker ps -q -f name=^pelnav$)" ]; then
+  exec docker exec -i pelnav python -X utf8 -m server.manage --config "$R/data/config.toml" "$@"
+fi
+# ยังไม่ได้เปิดเซิร์ฟเวอร์ (เช่นตอน init) -> รันครั้งเดียวแล้วลบ container ทิ้ง
+exec docker run --rm -i --user "$(id -u):$(id -g)" --network host \
+  -v "$R:$R" -v /etc/localtime:/etc/localtime:ro -w "$R/app" \
+  "$IMG" python -X utf8 -m server.manage --config "$R/data/config.toml" "$@"

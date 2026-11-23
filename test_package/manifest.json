@@ -1,0 +1,127 @@
+{
+  "package_id": "pkg-test-20261108",
+  "seed": 0,
+  "k": 0,
+  "items": [
+    {
+      "task_id": "T001",
+      "xray": "T001_X.png",
+      "fluoro": "T001_F.jpg",
+      "xray_size": [
+        4032,
+        3024
+      ],
+      "fluoro_size": [
+        800,
+        600
+      ],
+      "box_xyxy": [
+        806.4,
+        756.0,
+        3024.0,
+        2419.2
+      ],
+      "is_repeat_of": null
+    },
+    {
+      "task_id": "T002",
+      "xray": "T002_X.jpg",
+      "fluoro": "T002_F.jpg",
+      "xray_size": [
+        800,
+        600
+      ],
+      "fluoro_size": [
+        4032,
+        3024
+      ],
+      "box_xyxy": [
+        160.0,
+        150.0,
+        600.0,
+        480.0
+      ],
+      "is_repeat_of": null
+    },
+    {
+      "task_id": "T003",
+      "xray": "T003_X.png",
+      "fluoro": "T003_F.jpg",
+      "xray_size": [
+        3024,
+        4032
+      ],
+      "fluoro_size": [
+        600,
+        800
+      ],
+      "box_xyxy": [
+        604.8,
+        1008.0,
+        2268.0,
+        3225.6
+      ],
+      "is_repeat_of": null
+    },
+    {
+      "task_id": "T004",
+      "xray": "T004_X.jpg",
+      "fluoro": "T004_F.jpg",
+      "xray_size": [
+        1500,
+        2000
+      ],
+      "fluoro_size": [
+        1024,
+        1024
+      ],
+      "box_xyxy": [
+        300.0,
+        500.0,
+        1125.0,
+        1600.0
+      ],
+      "is_repeat_of": null
+    },
+    {
+      "task_id": "T005",
+      "xray": "T005_X.png",
+      "fluoro": "T005_F.jpg",
+      "xray_size": [
+        4032,
+        3024
+      ],
+      "fluoro_size": [
+        800,
+        600
+      ],
+      "box_xyxy": [
+        806.4,
+        756.0,
+        3024.0,
+        2419.2
+      ],
+      "is_repeat_of": "T001"
+    },
+    {
+      "task_id": "T006",
+      "xray": "T006_X.png",
+      "fluoro": "T006_F.jpg",
+      "xray_size": [
+        3000,
+        2400
+      ],
+      "fluoro_size": [
+        1024,
+        1024
+      ],
+      "box_xyxy": [
+        1100.0,
+        700.0,
+        2000.0,
+        1500.0
+      ],
+      "is_repeat_of": null
+    }
+  ]
+}

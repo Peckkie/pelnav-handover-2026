@@ -1,0 +1,6 @@
+# patient images (names/HN) - never commit
+orig_package/
+orig_package.zip
+*.zip
+
+.DS_Store
