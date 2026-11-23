@@ -4,3 +4,6 @@ orig_package.zip
 *.zip
 
 .DS_Store
+
+# word lock files
+~$*
